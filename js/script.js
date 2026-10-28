@@ -1,6 +1,7 @@
 'use strict';
 
 (() => {
+  // EDIT: Configure EmailJS and enable it when you are ready to send real messages.
   const EMAILJS_CONFIG = { enabled: false, serviceId: '', templateId: '', publicKey: '' };
   const THEMES = ['midnight', 'dracula', 'nord', 'sage'];
 
@@ -52,11 +53,10 @@
     let currentFilter = 'all';
 
     // Vietnamese is collected from the semantic HTML, keeping one source of content.
-    // EDIT: Translate the project samples and university placeholders below when you replace their VI copy.
+    // EDIT: Fill in the project dates (and project type/role where applicable) and university placeholders below together with their VI copy.
     // EDIT: Confirm the three course dates in EN together with their VI dates.
     const translations = {
       "vi": {
-        "hero.note": "Từ dữ liệu.\nĐến hệ thống.",
         "menu.close": "Đóng menu",
         "theme.changed": "Đã chuyển giao diện sang {theme}.",
         "motion.pause": "Tạm dừng hiệu ứng",
@@ -74,6 +74,7 @@
         "easter.egg": "↑ ↑ ↓ ↓ ← → ← → B A — Đã mở khóa chế độ retro. Hello, fellow developer!",
         "close": "Đóng",
         "toast.close": "Đóng thông báo",
+        "meta.keywords": "Chúc Mạnh Cường, CMC, Công nghệ thông tin, Khoa học dữ liệu, Backend Developer, C#, .NET, ASP.NET Core, PHP, Laravel, portfolio",
         "meta.description": "Portfolio của Chúc Mạnh Cường (CMC) — sinh viên Công nghệ thông tin, định hướng Backend Developer C#/.NET và PHP Laravel, tìm kiếm cơ hội thực tập Backend.",
         "meta.social": "Từ dữ liệu đến hệ thống. Khám phá dự án, kỹ năng và hành trình học Backend C#/.NET của Chúc Mạnh Cường (CMC)."
       },
@@ -96,8 +97,9 @@
         "hero.description": "An ambitious Backend Developer with expertise in C# .NET and PHP Laravel.",
         "hero.projects": "View Projects",
         "hero.contact": "Contact Me",
-        "hero.note": "From data.\nTo systems.",
-        "hero.location": "Vietnam",
+        "hero.cubeLabel": "Interactive 3D cube",
+        "hero.cubeAlt": "A 3×3×3 cube with metallic and glowing blue blocks",
+        "hero.cubeHelp": "Hold and drag to rotate the cube, or use the arrow keys. Release to resume automatic rotation, one turn every 40 seconds.",
         "hero.scroll": "Explore my journey",
         "about.title": "Behind the code.",
         "about.alt": "Portrait of Chúc Mạnh Cường (CMC)",
@@ -106,15 +108,14 @@
         "about.p2": "I enjoy learning through projects: understanding how code works and seeing problems through to a solution. In a team, I proactively divide tasks, communicate with teammates, and review results so we can achieve our goals together.",
         "about.goalLabel": "Career goal",
         "about.goal": "I hope to find a C#/.NET Backend internship where I can contribute to real projects, learn from experienced developers, and gradually become a responsible developer with solid foundations.",
-        "stats.projects": "Personal projects",
-        "skills.title": "Tools I build with.",
-        "skills.intro": "Technologies I am learning and using.",
-        "skills.tools": "Tools",
+        "stats.projects": "Projects",
+        "skills.title": "Technical Skills",
+        "skills.intro": "Technologies I work with",
         "level.proficient": "Proficient",
         "level.intermediate": "Intermediate",
         "experience.title": "Experience in the real world.",
         "projects.title": "Ideas, made real.",
-        "projects.intro": "Personal projects I have worked on.",
+        "projects.intro": "Projects I have worked on.",
         "projects.filter": "Filter projects by technology",
         "projects.all": "All",
         "projects.live": "Live Demo",
@@ -133,7 +134,7 @@
         "form.email": "Email",
         "form.message": "Message",
         "form.namePlaceholder": "What should I call you?",
-        "form.emailPlaceholder": "you@example.com",
+        "form.emailPlaceholder": "Your email address",
         "form.messagePlaceholder": "Tell me about your opportunity or idea…",
         "form.send": "Send Message",
         "form.sending": "Sending…",
@@ -158,6 +159,7 @@
         "motion.play": "Resume animations",
         "motion.reduced": "Reduced motion follows your device",
         "easter.egg": "↑ ↑ ↓ ↓ ← → ← → B A — Retro mode unlocked. Hello, fellow developer!",
+        "meta.keywords": "Chúc Mạnh Cường, CMC, Information Technology, Data Science, Backend Developer, C#, .NET, ASP.NET Core, PHP, Laravel, portfolio",
         "meta.description": "Portfolio of Chúc Mạnh Cường (CMC) — an Information Technology student pursuing Backend development with C#/.NET and PHP Laravel, seeking a Backend internship.",
         "meta.social": "From data to systems. Explore the projects, skills, and C#/.NET Backend learning journey of Chúc Mạnh Cường (CMC).",
         "stats.skills": "Technical skills",
@@ -177,18 +179,24 @@
         "education.everyone.school": "Aptech Global Academy",
         "education.everyone.date": "Aug 2025",
         "education.everyone.detail": "A comprehensive introduction to Generative AI workflows, including practical applications and ethical implementation.",
-        "projects.project1.title": "[Project 1 name]",
-        "projects.project1.meta": "Personal Project | [Dates]",
-        "projects.project1.description": "[Describe the project in 2–3 sentences]",
-        "projects.project1.alt": "Preview of [Project 1 name]",
-        "projects.project2.title": "[Project 2 name]",
-        "projects.project2.meta": "Personal Project | [Dates]",
-        "projects.project2.description": "[Describe the project in 2–3 sentences]",
-        "projects.project2.alt": "Preview of [Project 2 name]",
-        "projects.project3.title": "[Project 3 name]",
-        "projects.project3.meta": "Personal Project | [Dates]",
-        "projects.project3.description": "[Describe the project in 2–3 sentences]",
-        "projects.project3.alt": "Preview of [Project 3 name]"
+        "projects.project1.title": "Personal Portfolio",
+        "projects.project1.meta": "Personal project | Oct 2026",
+        "projects.project1.description": "A portfolio website introducing me, my skills, and my projects, built with plain HTML, CSS, and JavaScript. It supports Vietnamese and English, multiple color themes, and a responsive layout, and is deployed on GitHub Pages.",
+        "projects.project1.alt": "Personal portfolio interface with an introduction, skills, and project cards",
+        "projects.project2.title": "E-Greetings — E-card Sender",
+        "projects.project2.meta": "Team project | [Time]",
+        "projects.project2.description": "An ASP.NET Core MVC web application for sending e-cards: users choose a template, personalize it with a message, image, or video, and email it to the recipient. It includes daily e-card subscriptions, a background service for scheduled delivery, and an admin dashboard.",
+        "projects.project2.alt": "E-Greetings interface for choosing, personalizing, and emailing e-cards",
+        "projects.project3.title": "Laravel Store — E-commerce Website",
+        "projects.project3.meta": "Project | [Time]",
+        "projects.project3.description": "An e-commerce website built with Laravel 9 and PHP 8.2. The customer interface includes product filtering and search, a shopping cart, checkout with discount codes, wishlists, and reviews. The admin dashboard manages products, orders, invoices, content, and users. Packaged with Docker.",
+        "projects.project3.alt": "Laravel Store interface with product listings, filters, and a shopping cart",
+        // EDIT: Confirm the project dates and project type together with the Vietnamese copy.
+        "projects.project4.preview": "3D Regression",
+        "projects.project4.title": "3D Regression — Machine Learning Visualization",
+        "projects.project4.meta": "Project | Oct 2026",
+        "projects.project4.description": "A web application built with Angular and Three.js to visualize the training of Linear Regression, Polynomial, Ridge, and Lasso models in 3D. Users can generate data or import CSV files, step through training, and track loss and evaluation metrics. Training runs in a Web Worker, while experiments are stored offline in IndexedDB for comparison and JSON/CSV export.",
+        "projects.project4.alt": "3D Regression interface with a point cloud, model surface, and loss chart"
       }
     };
 
@@ -222,13 +230,16 @@
       languageButton.firstChild.textContent = language === 'vi' ? 'EN ' : 'VI ';
       languageButton.setAttribute('aria-label', language === 'vi' ? 'Switch to English' : 'Chuyển sang tiếng Việt');
       menuButton.setAttribute('aria-label', t(menuPanel.classList.contains('open') ? 'menu.close' : 'menu.open'));
+      document.querySelector('meta[name="keywords"]').content = t('meta.keywords');
       document.querySelector('meta[name="description"]').content = t('meta.description');
       document.querySelector('meta[property="og:description"]').content = t('meta.social');
       document.querySelector('meta[name="twitter:description"]').content = t('meta.social');
       document.querySelector('meta[property="og:locale"]').content = language === 'vi' ? 'vi_VN' : 'en_US';
       const formNote = document.querySelector('#form-note');
-      formNote.dataset.i18n = EMAILJS_CONFIG.enabled ? 'form.liveNote' : 'form.demoNote';
-      formNote.textContent = t(formNote.dataset.i18n);
+      if (formNote) {
+        formNote.dataset.i18n = EMAILJS_CONFIG.enabled ? 'form.liveNote' : 'form.demoNote';
+        formNote.textContent = t(formNote.dataset.i18n);
+      }
       submitButton.querySelector('span').textContent = t(sending ? 'form.sending' : 'form.send');
       form.querySelectorAll('[aria-invalid="true"]').forEach(field => validateField(field));
       updateMotionControl();
@@ -690,6 +701,13 @@
     setLanguage(language);
     setupReveal();
     const syncParticles = setupParticles();
+    const cubeHost = document.querySelector('#hero-cube');
+    if (cubeHost) {
+      import('./hero-cube.js').then(({ initHeroCube }) => initHeroCube(cubeHost)).catch(() => {
+        // The reference image remains visible if modules or WebGL are unavailable.
+        cubeHost.dataset.renderer = 'fallback';
+      });
+    }
 
     languageButton.addEventListener('click', () => setLanguage(language === 'vi' ? 'en' : 'vi'));
     themeButton.addEventListener('click', () => toggleThemePanel(themePanel.hidden));
