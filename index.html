@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="midnight">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio của Chúc Mạnh Cường (CMC) — sinh viên Công nghệ thông tin, định hướng Backend Developer C#/.NET và PHP Laravel, tìm kiếm cơ hội thực tập Backend.">
+  <meta name="keywords"
+    content="Chúc Mạnh Cường, CMC, Công nghệ thông tin, Khoa học dữ liệu, Backend Developer, C#, .NET, ASP.NET Core, PHP, Laravel, portfolio">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chúc Mạnh Cường (CMC) — Backend Developer">
+  <meta property="og:description"
+    content="Từ dữ liệu đến hệ thống. Khám phá dự án, kỹ năng và hành trình học Backend C#/.NET của Chúc Mạnh Cường (CMC).">
+  <!-- EDIT: Add canonical, og:url and absolute og:image/twitter:image URLs after deployment. -->
+  <meta property="og:locale" content="vi_VN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chúc Mạnh Cường (CMC) — Backend Developer">
+  <meta name="twitter:description"
+    content="Từ dữ liệu đến hệ thống. Khám phá dự án, kỹ năng và hành trình học Backend C#/.NET của Chúc Mạnh Cường (CMC).">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700;750;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- The same file has a tiny synchronous bootstrap for saved theme before first paint. -->
+  <script src="js/script.js" data-bootstrap></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Chúc Mạnh Cường (CMC) — Backend Developer</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Chúc Mạnh Cường","alternateName":"CMC","jobTitle":"Backend Developer","knowsAbout":["C#",".NET","ASP.NET Core","PHP","Laravel","Data Science"]}
+  </script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Chuyển đến nội dung</a>
+  <div class="loader" aria-hidden="true"><span class="logo">CMC<span>.</span></span><span class="loader-line"></span>
+  </div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Điều hướng chính" data-i18n-aria="nav.label">
+      <a class="logo" href="#home" aria-label="CMC — trang chủ" data-i18n-aria="nav.logo">CMC<span>.</span></a>
+      <div class="nav-panel" id="nav-panel">
+        <ul class="nav-links">
+          <li><a href="#home" class="active" aria-current="location" data-i18n="nav.home">Trang chủ</a></li>
+          <li><a href="#about" data-i18n="nav.about">Giới thiệu</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Kỹ năng</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Kinh nghiệm</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Dự án</a></li>
+          <li><a href="#education" data-i18n="nav.education">Học vấn</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="nav-actions">
+        <button class="language-button" id="language-toggle" type="button" aria-label="Switch to English">EN <span
+            aria-hidden="true">↗</span></button>
+        <button class="menu-toggle icon-button" id="menu-toggle" type="button" aria-controls="nav-panel"
+          aria-expanded="false" aria-label="Mở menu" data-i18n-aria="menu.open"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-top">
+        <p class="mono" data-i18n="hero.intro">Xin chào, mình là CMC</p><a class="availability" href="#contact"><span
+            class="status-dot" aria-hidden="true"></span><span data-i18n="hero.available">Sẵn sàng cho cơ hội thực
+            tập</span></a>
+      </div>
+      <h1 id="hero-title">Chúc Mạnh<br><span class="gradient-text">Cường.</span></h1>
+      <div class="hero-bottom">
+        <div class="hero-description">
+          <p class="hero-role"><span aria-hidden="true" class="code-mark">&lt;</span> <span id="typing-text"
+              aria-hidden="true">Backend Developer</span><span class="typing-caret" aria-hidden="true">|</span><span
+              class="sr-only" data-i18n="hero.roles">Backend Developer, C# .NET Developer, Laravel Developer, Data Science Student</span> <span aria-hidden="true" class="code-mark">/&gt;</span></p>
+          <p class="hero-copy" data-i18n="hero.description">Backend Developer đầy tham vọng với chuyên môn về C# .NET và PHP Laravel.</p>
+          <div class="button-row"><a href="#projects" class="button button-primary"><span data-i18n="hero.projects">Khám
+                phá dự án</span><span aria-hidden="true">↗</span></a><a href="#contact" class="button button-secondary"
+              data-i18n="hero.contact">Liên hệ với mình</a></div>
+        </div>
+        <div class="hero-note"><span class="mono">C# / .NET / PHP Laravel</span>
+          <p data-i18n="hero.note">Từ dữ liệu.<br>Đến hệ thống.</p><span class="location"><span
+              aria-hidden="true">↳</span> <span data-i18n="hero.location">Việt Nam</span></span>
+        </div>
+      </div>
+      <div class="hero-foot"><a href="#about"><span aria-hidden="true">↓</span> <span data-i18n="hero.scroll">Khám phá
+            hành trình</span></a><span class="mono">C# .NET & PHP Laravel</span></div>
+    </section>
+
+    <section class="section section-tinted" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index mono">01 / <span data-i18n="nav.about">Giới
+              thiệu</span></span>
+          <h2 id="about-title" data-i18n="about.title">Đằng sau những dòng code.</h2>
+        </div>
+        <div class="about-grid">
+          <!-- EDIT: Add your own portrait at images/avatar.jpg. -->
+          <figure class="portrait reveal">
+            <div class="portrait-image image-frame"><span class="image-fallback avatar-fallback"
+                aria-hidden="true">C.</span><img src="images/avatar.jpg" alt="Chân dung Chúc Mạnh Cường (CMC)"
+                data-i18n-alt="about.alt" width="600" height="720" loading="lazy"></div>
+            <figcaption><strong>Chúc Mạnh Cường</strong><span class="mono">CMC / Backend Developer</span></figcaption>
+          </figure>
+          <div class="about-copy reveal">
+            <h3 data-i18n="about.subtitle">Chúc Mạnh Cường | Định hướng Backend Developer C#/.NET</h3>
+            <p data-i18n="about.p1">Mình là Chúc Mạnh Cường, sinh viên Công nghệ thông tin, đang tập trung phát triển theo hướng Backend với C# và .NET. Hiện mình học và thực hành xây dựng ứng dụng với ASP.NET Core, Entity Framework Core và SQL Server, hướng tới việc tự thiết kế API và xử lý nghiệp vụ cho những bài toán thực tế.</p>
+            <p data-i18n="about.p2">Mình thích học qua việc làm dự án: tìm hiểu kỹ cách code vận hành và giải quyết vấn đề đến nơi đến chốn. Khi làm việc nhóm, mình chủ động chia việc, trao đổi với các thành viên và kiểm tra kết quả để cả nhóm cùng hoàn thành mục tiêu.</p>
+            <aside class="career-goal glass"><span class="mono" data-i18n="about.goalLabel">Mục tiêu nghề nghiệp</span>
+              <p data-i18n="about.goal">Mình mong tìm được cơ hội thực tập Backend C#/.NET để tham gia dự án thực tế, học hỏi từ những người có kinh nghiệm và từng bước trở thành một lập trình viên có nền tảng vững, làm việc có trách nhiệm.</p>
+            </aside>
+          </div>
+        </div>
+        <!-- EDIT: Update counts when the project, skill, or education items change. -->
+        <div class="stats reveal">
+          <div><strong><span data-count="3">3</span></strong><span data-i18n="stats.projects">Dự án cá nhân</span></div>
+          <div><strong><span data-count="12">12</span></strong><span data-i18n="stats.skills">Kỹ năng kỹ thuật</span></div>
+          <div><strong><span data-count="4">4</span></strong><span data-i18n="stats.education">Học vấn &amp; chứng chỉ</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading reveal"><span class="section-index mono">02 / <span data-i18n="nav.skills">Kỹ
+            năng</span></span>
+        <h2 id="skills-title" data-i18n="skills.title">Bộ công cụ của mình.</h2>
+        <p data-i18n="skills.intro">Công nghệ mình đang học và sử dụng.</p>
+      </div>
+      <!-- EDIT: Skill levels are samples; confirm them against your actual proficiency. -->
+      <div class="skills-grid">
+        <article class="skill-group glass reveal">
+          <h3><span class="code-mark" aria-hidden="true">{ }</span> Backend</h3>
+          <ul class="skill-list">
+            <li class="skill proficient">
+              <div><span>C#</span><span data-i18n="level.proficient">Thành thạo</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill intermediate">
+              <div><span>ASP.NET Core</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill intermediate">
+              <div><span>Entity Framework Core</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill intermediate">
+              <div><span>PHP</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill intermediate">
+              <div><span>Laravel</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill intermediate">
+              <div><span>RESTful API</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+          </ul>
+        </article>
+        <article class="skill-group glass reveal">
+          <h3><span class="code-mark" aria-hidden="true">[ ]</span> Data</h3>
+          <ul class="skill-list">
+            <li class="skill intermediate">
+              <div><span>SQL Server</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill intermediate">
+              <div><span>Python</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+          </ul>
+        </article>
+        <article class="skill-group glass reveal">
+          <h3><span class="code-mark" aria-hidden="true">&lt; /&gt;</span> Frontend</h3>
+          <ul class="skill-list">
+            <li class="skill proficient">
+              <div><span>HTML5</span><span data-i18n="level.proficient">Thành thạo</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill proficient">
+              <div><span>CSS3</span><span data-i18n="level.proficient">Thành thạo</span></div><span class="skill-track"><span></span></span>
+            </li>
+            <li class="skill intermediate">
+              <div><span>JavaScript</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+          </ul>
+        </article>
+        <article class="skill-group glass reveal">
+          <h3><span class="code-mark" aria-hidden="true">~/</span> <span data-i18n="skills.tools">Công cụ</span></h3>
+          <ul class="skill-list">
+            <li class="skill intermediate">
+              <div><span>Git</span><span data-i18n="level.intermediate">Trung cấp</span></div><span class="skill-track"><span></span></span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index mono">03 / <span data-i18n="nav.experience">Kinh
+              nghiệm</span></span>
+          <h2 id="experience-title" data-i18n="experience.title">Học từ những việc thật.</h2>
+        </div>
+        <!-- EDIT: Copy this template to add experience; replace bracketed text and add matching EN translation keys.
+        <div class="timeline">
+          <article class="timeline-item glass reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-date mono">[Thời gian / Dates]</p>
+            <h3>[Vị trí / Role]</h3>
+            <p class="company">[Đơn vị / Organization]</p>
+            <ul class="detail-list"><li>[Công việc và kết quả / Responsibilities and outcomes]</li></ul>
+          </article>
+        </div>
+        -->
+        <article class="experience-empty glass reveal">
+          <p data-i18n="experience.empty">Chưa có kinh nghiệm làm việc. Mình sẽ cập nhật khi có.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal"><span class="section-index mono">04 / <span data-i18n="nav.projects">Dự
+            án</span></span>
+        <h2 id="projects-title" data-i18n="projects.title">Ý tưởng thành sản phẩm.</h2>
+        <p data-i18n="projects.intro">Những dự án cá nhân mình đã thực hiện.</p>
+      </div>
+      <div class="project-filters" role="group" aria-label="Lọc dự án theo công nghệ" data-i18n-aria="projects.filter">
+        <button class="filter-button active" data-filter="all" aria-pressed="true" data-i18n="projects.all">Tất cả</button>
+        <button class="filter-button" data-filter="dotnet" aria-pressed="false">C# .NET</button>
+        <button class="filter-button" data-filter="laravel" aria-pressed="false">Laravel</button>
+        <button class="filter-button" data-filter="web" aria-pressed="false">Web</button>
+      </div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <div class="projects-grid">
+        <!-- EDIT: Project 1: replace title, dates, description, tags, image, demo and source URLs; update EN keys too. -->
+        <article class="project-card glass reveal" data-project="project1" data-tech="dotnet">
+          <div class="project-image image-frame"><span class="image-fallback" aria-hidden="true"><b data-i18n="projects.project1.title">[Tên dự án 1]</b><span>C# + ASP.NET Core + SQL Server</span></span><img src="images/project1.png" alt="Ảnh minh họa [Tên dự án 1]" data-i18n-alt="projects.project1.alt" width="800" height="500" loading="lazy"><span class="project-number mono">01</span></div>
+          <div class="project-content">
+            <p class="project-meta mono" data-i18n="projects.project1.meta">Dự Án Cá Nhân | [Thời gian]</p>
+            <h3><button class="project-open" data-open="project1"><span data-i18n="projects.project1.title">[Tên dự án 1]</span> <span aria-hidden="true">↗</span></button></h3>
+            <p class="project-description" data-i18n="projects.project1.description">[Mô tả 2–3 câu về dự án]</p>
+            <ul class="tags"><li>C#</li><li>ASP.NET Core</li><li>SQL Server</li></ul>
+            <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.live">Xem trực tiếp</span> ↗</a><a href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.source">Mã nguồn</span> <span aria-hidden="true">&lt;/&gt;</span></a></div>
+          </div>
+        </article>
+        <!-- EDIT: Project 2: replace title, dates, description, tags, image, demo and source URLs; update EN keys too. -->
+        <article class="project-card glass reveal" data-project="project2" data-tech="laravel">
+          <div class="project-image image-frame"><span class="image-fallback" aria-hidden="true"><b data-i18n="projects.project2.title">[Tên dự án 2]</b><span>PHP + Laravel + MySQL</span></span><img src="images/project2.png" alt="Ảnh minh họa [Tên dự án 2]" data-i18n-alt="projects.project2.alt" width="800" height="500" loading="lazy"><span class="project-number mono">02</span></div>
+          <div class="project-content">
+            <p class="project-meta mono" data-i18n="projects.project2.meta">Dự Án Cá Nhân | [Thời gian]</p>
+            <h3><button class="project-open" data-open="project2"><span data-i18n="projects.project2.title">[Tên dự án 2]</span> <span aria-hidden="true">↗</span></button></h3>
+            <p class="project-description" data-i18n="projects.project2.description">[Mô tả 2–3 câu về dự án]</p>
+            <ul class="tags"><li>PHP</li><li>Laravel</li><li>MySQL</li></ul>
+            <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.live">Xem trực tiếp</span> ↗</a><a href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.source">Mã nguồn</span> <span aria-hidden="true">&lt;/&gt;</span></a></div>
+          </div>
+        </article>
+        <!-- EDIT: Project 3: replace title, dates, description, tags, image, demo and source URLs; update EN keys too. -->
+        <article class="project-card glass reveal" data-project="project3" data-tech="web">
+          <div class="project-image image-frame"><span class="image-fallback" aria-hidden="true"><b data-i18n="projects.project3.title">[Tên dự án 3]</b><span>HTML + CSS + JavaScript</span></span><img src="images/project3.png" alt="Ảnh minh họa [Tên dự án 3]" data-i18n-alt="projects.project3.alt" width="800" height="500" loading="lazy"><span class="project-number mono">03</span></div>
+          <div class="project-content">
+            <p class="project-meta mono" data-i18n="projects.project3.meta">Dự Án Cá Nhân | [Thời gian]</p>
+            <h3><button class="project-open" data-open="project3"><span data-i18n="projects.project3.title">[Tên dự án 3]</span> <span aria-hidden="true">↗</span></button></h3>
+            <p class="project-description" data-i18n="projects.project3.description">[Mô tả 2–3 câu về dự án]</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.live">Xem trực tiếp</span> ↗</a><a href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.source">Mã nguồn</span> <span aria-hidden="true">&lt;/&gt;</span></a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index mono">05 / <span data-i18n="nav.education">Học
+              vấn</span></span>
+          <h2 id="education-title" data-i18n="education.title">Luôn tiếp tục học hỏi.</h2>
+          <p data-i18n="education.intro">Nền tảng kỹ thuật hôm nay. Những khả năng mới ngày mai.</p>
+        </div>
+        <div class="education-grid">
+          <!-- EDIT: Owner's university: replace institution, start year and program description in VI and EN. -->
+          <article class="education-card glass reveal">
+            <div class="education-meta"><span data-i18n="education.diploma">Chương trình đào tạo</span><span class="mono" data-i18n="education.university.date">[Năm bắt đầu] — Hiện tại</span></div>
+            <h3 data-i18n="education.university.title">Công nghệ thông tin — Chuyên ngành Khoa học dữ liệu</h3>
+            <p data-i18n="education.university.school">[Tên trường đại học]</p>
+            <p class="education-detail" data-i18n="education.university.detail">[Mô tả ngắn chương trình học]</p>
+          </article>
+          <!-- EDIT: confirm dates — ADSE. -->
+          <article class="education-card glass reveal">
+            <div class="education-meta"><span data-i18n="education.diploma">Chương trình đào tạo</span><span class="mono" data-i18n="education.adse.date">09/2024 — Hiện tại</span></div>
+            <h3 data-i18n="education.adse.title">Advanced Diploma in Software Engineering</h3>
+            <p data-i18n="education.adse.school">Aptech Computer Education</p>
+            <p class="education-detail" data-i18n="education.adse.detail">Chương trình toàn diện bao gồm phương pháp phát triển phần mềm, ngôn ngữ lập trình, quản lý cơ sở dữ liệu.</p>
+            <span class="education-foot mono">ADSE</span>
+          </article>
+          <!-- EDIT: confirm dates — Generative AI for Developers. -->
+          <article class="education-card glass reveal">
+            <div class="education-meta"><span data-i18n="education.certificate">Chứng chỉ</span><span class="mono" data-i18n="education.ai.date">09/2025</span></div>
+            <h3 data-i18n="education.ai.title">Practical Generative AI for Developers</h3>
+            <p data-i18n="education.ai.school">Aptech Global Academy</p>
+            <p class="education-detail" data-i18n="education.ai.detail">Prompt engineering, RAG pipelines và tích hợp LLM.</p>
+          </article>
+          <!-- EDIT: confirm dates — Generative AI for Everyone. -->
+          <article class="education-card glass reveal">
+            <div class="education-meta"><span data-i18n="education.certificate">Chứng chỉ</span><span class="mono" data-i18n="education.everyone.date">08/2025</span></div>
+            <h3 data-i18n="education.everyone.title">Practical Generative AI for Everyone</h3>
+            <p data-i18n="education.everyone.school">Aptech Global Academy</p>
+            <p class="education-detail" data-i18n="education.everyone.detail">Giới thiệu toàn diện về quy trình Generative AI, bao gồm ứng dụng thực tế và triển khai có đạo đức.</p>
+            <span class="education-foot mono">Generative AI</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading reveal"><span class="section-index mono">06 / <span data-i18n="nav.contact">Liên
+            hệ</span></span>
+        <h2 id="contact-title" data-i18n="contact.title">Cùng xây điều ý nghĩa.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <!-- EDIT: Replace the email address, GitHub URL and LinkedIn URL with your own contact details. -->
+          <p data-i18n="contact.intro">Bạn đang tìm một thực tập sinh Backend ham học hỏi? Mình rất mong được trò chuyện
+            về đội ngũ và những dự án của bạn.</p><a class="email-link"
+            href="mailto:ten-cua-ban@example.com">ten-cua-ban@example.com <span aria-hidden="true">↗</span></a>
+          <ul class="social-links">
+            <li><a href="https://github.com/ten-cua-ban" target="_blank" rel="noopener noreferrer">GitHub <span
+                  aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/ten-cua-ban" target="_blank"
+                rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+          </ul>
+          <p class="contact-signature mono" data-i18n="contact.sign">Một cuộc trò chuyện tốt là điểm khởi đầu.</p>
+        </div>
+        <form id="contact-form" class="contact-form glass reveal" novalidate>
+          <div class="field"><label for="name" data-i18n="form.name">Tên của bạn</label><input id="name"
+              name="from_name" type="text" autocomplete="name" required minlength="2" maxlength="100"
+              aria-describedby="name-error" placeholder="Bạn tên là gì?" data-i18n-placeholder="form.namePlaceholder">
+            <p id="name-error" class="field-error" aria-live="polite"></p>
+          </div>
+          <div class="field"><label for="email" data-i18n="form.email">Email</label><input id="email" name="reply_to"
+              type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error"
+              placeholder="ban@example.com" data-i18n-placeholder="form.emailPlaceholder">
+            <p id="email-error" class="field-error" aria-live="polite"></p>
+          </div>
+          <div class="field"><label for="message" data-i18n="form.message">Lời nhắn</label><textarea id="message"
+              name="message" rows="4" required minlength="10" maxlength="5000" aria-describedby="message-error"
+              placeholder="Kể mình nghe về cơ hội hoặc ý tưởng của bạn…"
+              data-i18n-placeholder="form.messagePlaceholder"></textarea>
+            <p id="message-error" class="field-error" aria-live="polite"></p>
+          </div>
+          <button class="button button-primary" id="submit-button" type="submit"><span data-i18n="form.send">Gửi lời
+              nhắn</span><span aria-hidden="true">↗</span></button>
+          <p class="form-note" id="form-note" data-i18n="form.demoNote">Chế độ demo: biểu mẫu mô phỏng gửi tin. Để liên
+            hệ thật, hãy gửi email trực tiếp.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner"><a class="logo" href="#home">CMC<span>.</span></a>
+      <p>© <span id="year">2026</span> Chúc Mạnh Cường (CMC).</p>
+      <p data-i18n="footer.built">Được xây dựng với 💻 và ☕</p>
+    </div>
+  </footer>
+  <div class="floating-controls"><button id="theme-toggle" class="icon-button theme-toggle" type="button"
+      aria-label="Đổi giao diện" data-i18n-aria="theme.label" aria-expanded="false" aria-controls="theme-panel"><svg
+        viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"
+        aria-hidden="true">
+        <path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.5-3.3 1.5 1.5 0 0 1 1.2-2.5H18a4 4 0 0 0 4-4C22 6.7 17.5 3 12 3Z" />
+        <circle cx="7" cy="10" r="1" />
+        <circle cx="11" cy="7" r="1" />
+        <circle cx="16" cy="8" r="1" />
+      </svg></button><button id="back-to-top" class="icon-button back-to-top" type="button" aria-label="Về đầu trang"
+      data-i18n-aria="top" hidden>↑</button></div>
+  <aside id="theme-panel" class="theme-panel glass" aria-labelledby="theme-title" hidden>
+    <div class="panel-heading">
+      <h2 id="theme-title" data-i18n="theme.title">Theo cách của bạn.</h2><button id="theme-close" class="icon-button"
+        type="button" aria-label="Đóng" data-i18n-aria="close">×</button>
+    </div>
+    <p data-i18n="theme.subtitle">Chọn không gian để khám phá.</p>
+    <div class="theme-options"><button data-set-theme="midnight" aria-pressed="true"><span
+          class="swatch swatch-midnight"></span>Midnight</button><button data-set-theme="dracula"
+        aria-pressed="false"><span class="swatch swatch-dracula"></span>Dracula</button><button data-set-theme="nord"
+        aria-pressed="false"><span class="swatch swatch-nord"></span>Nord</button><button data-set-theme="sage"
+        aria-pressed="false"><span class="swatch swatch-sage"></span>Sage</button></div><button id="motion-toggle"
+      class="motion-toggle" type="button" aria-pressed="false" data-i18n="motion.pause">Tạm dừng hiệu ứng</button>
+  </aside>
+  <!-- EDIT: The modal preview uses project1.png initially; project images are supplied by the owner. -->
+  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title">
+    <div class="modal-inner"><button class="modal-close icon-button" id="modal-close" type="button"
+        aria-label="Đóng chi tiết dự án" data-i18n-aria="modal.close">×</button>
+      <div class="modal-image image-frame"><span class="image-fallback" id="modal-image-fallback"
+          aria-hidden="true"></span><img id="modal-image" src="images/project1.png" alt="Ảnh minh họa [Tên dự án 1]" data-i18n-alt="projects.project1.alt" width="800" height="500"></div>
+      <div class="modal-content">
+        <p class="project-meta mono" id="modal-meta"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <ul class="tags" id="modal-tags"></ul>
+        <div class="button-row" id="modal-links"></div>
+      </div>
+    </div>
+  </dialog>
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-relevant="additions"></div>
+</body>
+
+</html>
